@@ -1,0 +1,9 @@
+public class Texto : Mensagem
+{
+    public Texto(string conteudo) : base(conteudo) { }
+
+    public override void Exibir()
+    {
+        Console.WriteLine($"[TEXTO] {DataEnvio}: {Conteudo}");
+    }
+}

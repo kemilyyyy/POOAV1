@@ -1,0 +1,13 @@
+public abstract class Mensagem
+{
+    public string Conteudo { get; set; }
+    public DateTime DataEnvio { get; set; }
+
+    public Mensagem(string conteudo)
+    {
+        Conteudo = conteudo;
+        DataEnvio = DateTime.Now;
+    }
+
+    public abstract void Exibir();
+}

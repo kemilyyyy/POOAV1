@@ -1,0 +1,15 @@
+public class Facebook : Canal
+{
+    public string Usuario { get; set; }
+
+    public Facebook(string usuario)
+    {
+        Usuario = usuario;
+    }
+
+    public void EnviarMensagem(Mensagem mensagem)
+    {
+        Console.WriteLine($"Enviando via Facebook para {Usuario}");
+        mensagem.Exibir();
+    }
+}

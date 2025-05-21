@@ -1,0 +1,19 @@
+public class Video : Mensagem
+{
+    public string Arquivo { get; set; }
+    public string Formato { get; set; }
+    public double Duracao { get; set; }
+
+    public Video(string conteudo, string arquivo, string formato, double duracao)
+        : base(conteudo)
+    {
+        Arquivo = arquivo;
+        Formato = formato;
+        Duracao = duracao;
+    }
+
+    public override void Exibir()
+    {
+        Console.WriteLine($"[VÍDEO] {DataEnvio}: {Conteudo}, Arquivo: {Arquivo}, Formato: {Formato}, Duração: {Duracao}s");
+    }
+}

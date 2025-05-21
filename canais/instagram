@@ -1,0 +1,15 @@
+public class Instagram : Canal
+{
+    public string Usuario { get; set; }
+
+    public Instagram(string usuario)
+    {
+        Usuario = usuario;
+    }
+
+    public void EnviarMensagem(Mensagem mensagem)
+    {
+        Console.WriteLine($"Enviando via Instagram para {Usuario}");
+        mensagem.Exibir();
+    }
+}

@@ -1,0 +1,15 @@
+public class WhatsApp : Canal
+{
+    public string NumeroTelefone { get; set; }
+
+    public WhatsApp(string numero)
+    {
+        NumeroTelefone = numero;
+    }
+
+    public void EnviarMensagem(Mensagem mensagem)
+    {
+        Console.WriteLine($"Enviando via WhatsApp para {NumeroTelefone}");
+        mensagem.Exibir();
+    }
+}
