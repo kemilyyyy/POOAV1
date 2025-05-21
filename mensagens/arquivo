@@ -1,0 +1,17 @@
+public class Arquivo : Mensagem
+{
+    public string Arquivo { get; set; }
+    public string Formato { get; set; }
+
+    public Arquivo(string conteudo, string arquivo, string formato)
+        : base(conteudo)
+    {
+        Arquivo = arquivo;
+        Formato = formato;
+    }
+
+    public override void Exibir()
+    {
+        Console.WriteLine($"[ARQUIVO] {DataEnvio}: {Conteudo}, Arquivo: {Arquivo}, Formato: {Formato}");
+    }
+}

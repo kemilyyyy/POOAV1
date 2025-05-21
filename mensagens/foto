@@ -1,0 +1,17 @@
+public class Foto : Mensagem
+{
+    public string Arquivo { get; set; }
+    public string Formato { get; set; }
+
+    public Foto(string conteudo, string arquivo, string formato)
+        : base(conteudo)
+    {
+        Arquivo = arquivo;
+        Formato = formato;
+    }
+
+    public override void Exibir()
+    {
+        Console.WriteLine($"[FOTO] {DataEnvio}: {Conteudo}, Arquivo: {Arquivo}, Formato: {Formato}");
+    }
+}

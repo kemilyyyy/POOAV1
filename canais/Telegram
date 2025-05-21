@@ -1,0 +1,17 @@
+public class Telegram : Canal
+{
+    public string NumeroTelefone { get; set; }
+    public string Usuario { get; set; }
+
+    public Telegram(string numero, string usuario)
+    {
+        NumeroTelefone = numero;
+        Usuario = usuario;
+    }
+
+    public void EnviarMensagem(Mensagem mensagem)
+    {
+        Console.WriteLine($"Enviando via Telegram para {Usuario} ({NumeroTelefone})");
+        mensagem.Exibir();
+    }
+}
